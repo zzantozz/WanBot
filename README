@@ -1,0 +1,10 @@
+You need the WanBot's email user/pw to do anything. Set them in properties:
+wanbot.gmail.user
+wanbot.gmail.password
+
+There are two phases: parse and notify
+To parse:
+mvn groovy:execute -P wanbot-parse
+
+To notify:
+mvn groovy:execute -P wanbot-notify

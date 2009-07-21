@@ -1,0 +1,25 @@
+<thewan>
+  <peeps>
+    <peep name="Ryan"/>
+    <peep name="James"/>
+    <peep name="Horky">
+        <alias>Adam</alias>
+    </peep>
+    <peep name="Mike"/>
+    <peep name="Vance"/>
+    <peep name="Eric"/>
+    <peep name="Chris"/>
+    <peep name="Horky"/>
+    <peep name="Blake"/>
+  </peeps>
+  <points>
+    <peep name="Ryan" points="0"/>
+    <peep name="James" points="0"/>
+    <peep name="Mike" points="0"/>
+    <peep name="Vance" points="0"/>
+    <peep name="Eric" points="0"/>
+    <peep name="Chris" points="0"/>
+    <peep name="Horky" points="0"/>
+    <peep name="Blake" points="0"/>
+  </points>
+</thewan>
