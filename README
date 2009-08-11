@@ -2,9 +2,14 @@ You need the WanBot's email user/pw to do anything. Set them in properties:
 wanbot.gmail.user
 wanbot.gmail.password
 
-There are two phases: parse and notify
-To parse:
-mvn groovy:execute -P wanbot-parse
+You can use system properties, environment vars (I think), or, preferably, a
+maven profile in your local settings. Don't commit the user/password.
 
-To notify:
-mvn groovy:execute -P wanbot-notify
+To run this thing, first compile (with tests!):
+mvn test
+
+Then process new messages:
+mvn exec:java -Dexec.mainClass=org.wanbot.WanBotDriver
+
+Finally, send the email summary:
+mvn exec:java -Dexec.mainClass=org.wanbot.NotificationsDriver
